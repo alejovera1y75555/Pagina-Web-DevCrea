@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevCrea — Desarrollo & Creatividad</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/devcrea-icon.svg">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- ================================
+     NAV
+     ================================ -->
+<nav>
+  <div class="logo">
+    <a href="#hero" style="display:block;line-height:0;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" height="34" aria-label="DevCrea">
+        <defs>
+          <linearGradient id="navDevG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4f9eff"/><stop offset="100%" style="stop-color:#3a7ee0"/>
+          </linearGradient>
+          <linearGradient id="navCreaG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#22d3a5"/><stop offset="100%" style="stop-color:#16b892"/>
+          </linearGradient>
+          <linearGradient id="navLine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#4f9eff"/>
+            <stop offset="45%" style="stop-color:#a855f7"/>
+            <stop offset="100%" style="stop-color:#22d3a5"/>
+          </linearGradient>
+          <filter id="navGlow"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <text x="2" y="36" font-family="JetBrains Mono,Courier New,monospace" font-size="36" font-weight="700" fill="url(#navDevG)" filter="url(#navGlow)" letter-spacing="-1">Dev</text>
+        <text x="88" y="38" font-family="Georgia,Times New Roman,serif" font-size="38" font-weight="700" font-style="italic" fill="url(#navCreaG)" letter-spacing="-1">Crea</text>
+        <circle cx="246" cy="14" r="5" fill="#a855f7" opacity="0.7"/>
+        <rect x="2" y="44" width="244" height="2" rx="1" fill="url(#navLine)" opacity="0.6"/>
+      </svg>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#sobre-nosotros">Nosotros</a></li>
+    <li><a href="#portafolio">Portafolio</a></li>
+    <li><a href="#contacto" class="nav-cta">Contáctanos</a></li>
+  </ul>
+</nav>
+
+<!-- ================================
+     HERO
+     ================================ -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="glow-blue"></div>
+  <div class="glow-purple"></div>
+
+  <div class="code-lines">
+    &gt; npm init devcrea<br/>
+    &gt; compiling ideas...<br/>
+    &gt; deploying creativity...<br/>
+    ✓ <span style="color:#22d3a5">build successful</span>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Colombia · Tecnología + Creatividad
+    </div>
+
+    <h1>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" style="height:clamp(60px,10vw,90px);display:block;margin:0 auto 0.25rem;" aria-label="DevCrea">
+        <defs>
+          <linearGradient id="heroDevG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4f9eff"/><stop offset="100%" style="stop-color:#3a7ee0"/>
+          </linearGradient>
+          <linearGradient id="heroCreaG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#22d3a5"/><stop offset="100%" style="stop-color:#16b892"/>
+          </linearGradient>
+          <linearGradient id="heroLine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#4f9eff"/>
+            <stop offset="45%" style="stop-color:#a855f7"/>
+            <stop offset="100%" style="stop-color:#22d3a5"/>
+          </linearGradient>
+          <filter id="heroGlow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <text x="4" y="64" font-family="JetBrains Mono,Courier New,monospace" font-size="62" font-weight="700" fill="url(#heroDevG)" filter="url(#heroGlow)" letter-spacing="-2">Dev</text>
+        <text x="148" y="68" font-family="Georgia,Times New Roman,serif" font-size="66" font-weight="700" font-style="italic" fill="url(#heroCreaG)" letter-spacing="-2">Crea</text>
+        <circle cx="390" cy="28" r="7" fill="#a855f7" opacity="0.7"/>
+        <rect x="4" y="74" width="382" height="3" rx="1.5" fill="url(#heroLine)" opacity="0.65"/>
+      </svg>
+    </h1>
+
+    <p class="tagline-code">
+      <span class="fn">build</span>(<span class="str">"ideas"</span>).<span class="fn">deploy</span>(<span class="str">"realidad"</span>);
+    </p>
+
+    <p class="hero-sub">
+      Desarrollo de software, diseño creativo, automatización y más. Convertimos tus ideas en soluciones digitales reales.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#servicios" class="btn-primary">Ver servicios</a>
+      <a href="#contacto" class="btn-outline">$ contact --us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     TERMINAL BAND
+     ================================ -->
+<div class="terminal-band">
+  <div class="terminal-scroll">
+    <span class="terminal-item"><span class="cmd">dev</span> · Bots & Automatización</span>
+    <span class="terminal-item"><span class="val">✓</span> Páginas Web</span>
+    <span class="terminal-item"><span class="cmd">sys</span> · Servicios de Sistemas</span>
+    <span class="terminal-item"><span class="val">✓</span> Diseño Publicitario</span>
+    <span class="terminal-item"><span class="cmd">print</span> · Estampación</span>
+    <span class="terminal-item"><span class="val">✓</span> Colombia 🇨🇴</span>
+    <span class="terminal-item"><span class="cmd">dev</span> · Bots & Automatización</span>
+    <span class="terminal-item"><span class="val">✓</span> Páginas Web</span>
+    <span class="terminal-item"><span class="cmd">sys</span> · Servicios de Sistemas</span>
+    <span class="terminal-item"><span class="val">✓</span> Diseño Publicitario</span>
+    <span class="terminal-item"><span class="cmd">print</span> · Estampación</span>
+    <span class="terminal-item"><span class="val">✓</span> Colombia 🇨🇴</span>
+  </div>
+</div>
+
+<!-- ================================
+     SERVICIOS
+     ================================ -->
+<section id="servicios">
+  <div class="container">
+    <p class="section-label">// services.list()</p>
+    <h2 class="section-title">Nuestros servicios</h2>
+    <p class="section-desc">Soluciones completas que combinan tecnología y creatividad para hacer crecer tu negocio.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <div class="service-name">Servicios de Sistemas</div>
+        <div class="service-desc">Formateo, mantenimiento, instalación de software y soporte técnico. Soluciones rápidas y confiables para tus equipos.</div>
+        <span class="service-tag">SOPORTE · SISTEMAS · IT</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">👨‍💻</div>
+        <div class="service-name">Programación</div>
+        <div class="service-desc">Desarrollo de bots, páginas web y aplicaciones a medida. Automatizamos procesos y construimos las herramientas que tu negocio necesita.</div>
+        <span class="service-tag">WEB · BOTS · APPS</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-name">Diseño Publicitario</div>
+        <div class="service-desc">Logos, flyers y piezas para redes sociales. Identidad visual que conecta con tu audiencia y destaca tu marca.</div>
+        <span class="service-tag">LOGOS · FLYERS · BRANDING</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖨️</div>
+        <div class="service-name">Estampación</div>
+        <div class="service-desc">Pocillos, termos y objetos personalizados con tu logo o diseño. Perfectos para regalos empresariales o merchandising.</div>
+        <span class="service-tag">POCILLOS · TERMOS · MERCH</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📞</div>
+        <div class="service-name">Asesoría Personalizada</div>
+        <div class="service-desc">¿No sabes por dónde empezar? Cuéntanos tu idea y te orientamos. Atención directa con un asesor que entiende tu proyecto.</div>
+        <span class="service-tag">CONSULTORÍA · ASESORÍA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     SOBRE NOSOTROS
+     ================================ -->
+<section id="sobre-nosotros">
+  <div class="container">
+    <div class="about-grid">
+      <div class="code-block">
+        <div class="code-header">
+          <div class="dot-r"></div>
+          <div class="dot-y"></div>
+          <div class="dot-g"></div>
+          <span class="code-filename">about.js</span>
+        </div>
+        <div class="code-body">
+          <span class="c-kw">const</span> <span class="c-fn">DevCrea</span> = {<br/>
+          <span class="c-indent"><span class="c-fn">pais</span>: <span class="c-str">"Colombia 🇨🇴"</span>,</span>
+          <span class="c-indent"><span class="c-fn">tipo</span>: <span class="c-str">"Microempresa"</span>,</span>
+          <span class="c-indent"><span class="c-fn">especialidades</span>: [</span>
+          <span class="c-indent" style="padding-left:3rem"><span class="c-str">"Desarrollo"</span>,</span>
+          <span class="c-indent" style="padding-left:3rem"><span class="c-str">"Creatividad"</span>,</span>
+          <span class="c-indent" style="padding-left:3rem"><span class="c-str">"Sistemas"</span>,</span>
+          <span class="c-indent" style="padding-left:3rem"><span class="c-str">"Diseño"</span></span>
+          <span class="c-indent">],</span>
+          <span class="c-indent"><span class="c-fn">respuesta</span>: <span class="c-str">"&lt; 24h"</span>,</span>
+          <span class="c-indent"><span class="c-fn">atencion</span>: <span class="c-str">"Personalizada"</span></span>
+          };<br/><br/>
+          <span class="c-cm">// Listos para tu proyecto</span><br/>
+          <span class="c-fn">DevCrea</span>.<span class="c-fn">start</span>(tuProyecto);
+        </div>
+      </div>
+
+      <div>
+        <p class="section-label">// who.areWe()</p>
+        <h2 class="section-title">Tecnología con alma creativa</h2>
+        <p style="color:var(--muted);line-height:1.8;margin-top:1rem;font-size:0.95rem;">
+          Somos <strong style="color:var(--text)">DevCrea</strong>, una microempresa colombiana que fusiona el desarrollo de software con la creatividad del diseño. Ayudamos a negocios, emprendedores y personas a llevar sus ideas al mundo digital.
+        </p>
+        <p style="color:var(--muted);line-height:1.8;margin-top:1rem;font-size:0.95rem;">
+          No somos una empresa masiva — somos un equipo dedicado a <strong style="color:var(--accent)">tu resultado</strong>, con atención directa y soluciones hechas a medida.
+        </p>
+        <div class="skills-list">
+          <span class="skill-chip">PHP</span>
+          <span class="skill-chip">Java</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">n8n</span>
+          <span class="skill-chip">WhatsApp API</span>
+          <span class="skill-chip">Diseño gráfico</span>
+          <span class="skill-chip">MySQL</span>
+          <span class="skill-chip">Estampación</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     PORTAFOLIO
+     ================================ -->
+<section id="portafolio">
+  <div class="container">
+    <p class="section-label">// portfolio.render()</p>
+    <h2 class="section-title">Proyectos recientes</h2>
+    <p class="section-desc">Una muestra de lo que hemos construido para nuestros clientes.</p>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-thumb p1">🤖</div>
+        <div class="portfolio-info">
+          <div class="portfolio-name">Bot WhatsApp — Financiera</div>
+          <div class="portfolio-type">automatizacion · whatsapp-api · n8n</div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-thumb p2">🌐</div>
+        <div class="portfolio-info">
+          <div class="portfolio-name">Sistema de Asistencias</div>
+          <div class="portfolio-type">web · php · mvc · mysql</div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-thumb p3">🎨</div>
+        <div class="portfolio-info">
+          <div class="portfolio-name">Identidad Visual — Emprendimiento</div>
+          <div class="portfolio-type">branding · diseño · flyers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     CONTACTO
+     ================================ -->
+<section id="contacto">
+  <div class="container">
+    <p class="section-label">// contact.send()</p>
+    <h2 class="section-title">¿Tienes un proyecto?</h2>
+    <p class="section-desc">Cuéntanos qué necesitas y te respondemos en menos de 24 horas.</p>
+
+    <div class="contact-wrap">
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label>WhatsApp / Teléfono</label>
+            <input type="text" placeholder="+57 300 000 0000" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Servicio de interés</label>
+          <select>
+            <option value="">Selecciona un servicio…</option>
+            <option>Servicios de sistemas</option>
+            <option>Programación (bots, webs, apps)</option>
+            <option>Diseño publicitario</option>
+            <option>Estampación</option>
+            <option>Asesoría personalizada</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Cuéntanos tu proyecto</label>
+          <textarea rows="4" placeholder="Describe brevemente lo que necesitas…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="align-self:flex-start;padding:0.9rem 2.5rem;">
+          Enviar mensaje →
+        </button>
+      </form>
+
+      <div class="contact-alt">
+        <a href="tel:+573001234567" class="contact-link">
+          <span>📞</span> +57 300 123 4567
+        </a>
+        <a href="https://wa.me/573001234567" target="_blank" class="contact-link">
+          <span>💬</span> WhatsApp
+        </a>
+        <a href="mailto:hola@devcrea.co" class="contact-link">
+          <span>✉️</span> Email
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     FOOTER
+     ================================ -->
+<footer>
+  <div class="footer-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" height="30" aria-label="DevCrea">
+      <defs>
+        <linearGradient id="ftDevG" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#4f9eff"/><stop offset="100%" style="stop-color:#3a7ee0"/>
+        </linearGradient>
+        <linearGradient id="ftCreaG" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#22d3a5"/><stop offset="100%" style="stop-color:#16b892"/>
+        </linearGradient>
+        <linearGradient id="ftLine" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#4f9eff"/>
+          <stop offset="45%" style="stop-color:#a855f7"/>
+          <stop offset="100%" style="stop-color:#22d3a5"/>
+        </linearGradient>
+      </defs>
+      <text x="2" y="36" font-family="JetBrains Mono,Courier New,monospace" font-size="36" font-weight="700" fill="url(#ftDevG)" letter-spacing="-1">Dev</text>
+      <text x="88" y="38" font-family="Georgia,Times New Roman,serif" font-size="38" font-weight="700" font-style="italic" fill="url(#ftCreaG)" letter-spacing="-1">Crea</text>
+      <circle cx="246" cy="16" r="5" fill="#a855f7" opacity="0.6"/>
+      <rect x="2" y="44" width="244" height="2.5" rx="1.5" fill="url(#ftLine)" opacity="0.55"/>
+    </svg>
+  </div>
+  <p>© 2025 DevCrea · Colombia 🇨🇴</p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:0.72rem;">build(ideas).deploy(realidad);</p>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e18"/>
+      <stop offset="100%" style="stop-color:#0f1525"/>
+    </linearGradient>
+    <linearGradient id="devG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f9eff"/>
+      <stop offset="100%" style="stop-color:#3a7ee0"/>
+    </linearGradient>
+    <linearGradient id="creaG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3a5"/>
+      <stop offset="100%" style="stop-color:#16b892"/>
+    </linearGradient>
+    <linearGradient id="borderG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f9eff" stop-opacity="0.5"/>
+      <stop offset="100%" style="stop-color:#22d3a5" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="120" height="120" rx="24" fill="url(#bgGrad)"/>
+  <!-- Borde gradiente -->
+  <rect width="120" height="120" rx="24" fill="none" stroke="url(#borderG)" stroke-width="1.5"/>
+
+  <!-- D -->
+  <text x="12" y="58" font-family="JetBrains Mono, Courier New, monospace" font-size="38" font-weight="700" fill="url(#devG)" filter="url(#glow2)">D</text>
+  <!-- C -->
+  <text x="62" y="58" font-family="Georgia, Times New Roman, serif" font-size="40" font-weight="700" font-style="italic" fill="url(#creaG)" filter="url(#glow2)">C</text>
+
+  <!-- Línea separadora vertical -->
+  <rect x="57" y="16" width="1.5" height="50" rx="1" fill="#1e2d45"/>
+
+  <!-- Underline -->
+  <rect x="12" y="66" width="96" height="2.5" rx="1.5" fill="url(#borderG)"/>
+
+  <!-- Tagline pequeña -->
+  <text x="60" y="88" font-family="JetBrains Mono, Courier New, monospace" font-size="8.5" fill="#4a5878" text-anchor="middle" letter-spacing="1">dev + crea</text>
+  <text x="60" y="102" font-family="JetBrains Mono, Courier New, monospace" font-size="7.5" fill="#2a3848" text-anchor="middle" letter-spacing="1.5">COLOMBIA</text>
+</svg>
