@@ -570,13 +570,76 @@ footer {
 footer p { color: var(--muted); font-size: 0.8rem; }
 
 /* ================================
+   HAMBURGER BUTTON
+   ================================ */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 19px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 200;
+}
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+/* Cruz cuando está abierto */
+.nav-toggle.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+
+/* ================================
    RESPONSIVE
    ================================ */
 @media (max-width: 768px) {
-  nav            { padding: 1rem 1.25rem; }
-  .nav-links     { display: none; }
-  .about-grid    { grid-template-columns: 1fr; gap: 2rem; }
-  .form-row      { grid-template-columns: 1fr; }
-  .code-lines    { display: none; }
-  footer         { justify-content: center; text-align: center; }
+  nav { padding: 1rem 1.25rem; position: relative; }
+
+  .nav-toggle { display: flex; }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(6,9,16,0.97);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+  .nav-links.open {
+    max-height: 320px;
+    padding: 1rem 0;
+  }
+  .nav-links li { text-align: center; }
+  .nav-links a {
+    display: block;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .nav-links .nav-cta {
+    margin: 0.5rem 1.5rem 0;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .about-grid  { grid-template-columns: 1fr; gap: 2rem; }
+  .form-row    { grid-template-columns: 1fr; }
+  .code-lines  { display: none; }
+  footer       { justify-content: center; text-align: center; }
 }

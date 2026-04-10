@@ -20,6 +20,25 @@ document.querySelectorAll('.service-card, .portfolio-card, .code-block, .contact
   observer.observe(el);
 });
 
+// Menú hamburguesa
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks  = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  navToggle.setAttribute('aria-expanded', isOpen);
+});
+
+// Cerrar menú al tocar un enlace
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
 // Formulario de contacto
 function handleSubmit(e) {
   e.preventDefault();
