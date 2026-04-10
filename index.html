@@ -37,10 +37,10 @@
           </linearGradient>
           <filter id="navGlow"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
         </defs>
-        <text x="2" y="36" font-family="JetBrains Mono,Courier New,monospace" font-size="36" font-weight="700" fill="url(#navDevG)" filter="url(#navGlow)" letter-spacing="-1">Dev</text>
-        <text x="88" y="38" font-family="Georgia,Times New Roman,serif" font-size="38" font-weight="700" font-style="italic" fill="url(#navCreaG)" letter-spacing="-1">Crea</text>
-        <circle cx="246" cy="14" r="5" fill="#a855f7" opacity="0.7"/>
-        <rect x="2" y="44" width="244" height="2" rx="1" fill="url(#navLine)" opacity="0.6"/>
+        <text x="2" y="36" font-family="JetBrains Mono,Courier New,monospace" font-size="36" font-weight="700" fill="url(#navDevG)" filter="url(#navGlow)" letter-spacing="-1" class="nav-logo-dev">Dev</text>
+        <text x="88" y="38" font-family="Georgia,Times New Roman,serif" font-size="38" font-weight="700" font-style="italic" fill="url(#navCreaG)" letter-spacing="-1" class="nav-logo-crea">Crea</text>
+        <circle cx="246" cy="14" r="5" fill="#a855f7" opacity="0.7" class="nav-logo-dot"/>
+        <rect x="2" y="44" width="244" height="2" rx="1" fill="url(#navLine)" opacity="0.6" class="nav-logo-line"/>
       </svg>
     </a>
   </div>
@@ -92,16 +92,14 @@
           </linearGradient>
           <filter id="heroGlow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
         </defs>
-        <text x="4" y="64" font-family="JetBrains Mono,Courier New,monospace" font-size="62" font-weight="700" fill="url(#heroDevG)" filter="url(#heroGlow)" letter-spacing="-2">Dev</text>
-        <text x="148" y="68" font-family="Georgia,Times New Roman,serif" font-size="66" font-weight="700" font-style="italic" fill="url(#heroCreaG)" letter-spacing="-2">Crea</text>
-        <circle cx="390" cy="28" r="7" fill="#a855f7" opacity="0.7"/>
-        <rect x="4" y="74" width="382" height="3" rx="1.5" fill="url(#heroLine)" opacity="0.65"/>
+        <text x="4" y="64" font-family="JetBrains Mono,Courier New,monospace" font-size="62" font-weight="700" fill="url(#heroDevG)" filter="url(#heroGlow)" letter-spacing="-2" class="hero-logo-dev">Dev</text>
+        <text x="148" y="68" font-family="Georgia,Times New Roman,serif" font-size="66" font-weight="700" font-style="italic" fill="url(#heroCreaG)" letter-spacing="-2" class="hero-logo-crea">Crea</text>
+        <circle cx="390" cy="28" r="7" fill="#a855f7" opacity="0.7" class="hero-logo-dot"/>
+        <rect x="4" y="74" width="382" height="3" rx="1.5" fill="url(#heroLine)" opacity="0.65" class="hero-logo-line"/>
       </svg>
     </h1>
 
-    <p class="tagline-code">
-      <span class="fn">build</span>(<span class="str">"ideas"</span>).<span class="fn">deploy</span>(<span class="str">"realidad"</span>);
-    </p>
+
 
     <p class="hero-sub">
       Desarrollo de software, diseño creativo, automatización y más. Convertimos tus ideas en soluciones digitales reales.
@@ -139,7 +137,7 @@
      ================================ -->
 <section id="servicios">
   <div class="container">
-    <p class="section-label">// services.list()</p>
+    <p class="section-label"></p>
     <h2 class="section-title">Nuestros servicios</h2>
     <p class="section-desc">Soluciones completas que combinan tecnología y creatividad para hacer crecer tu negocio.</p>
 
@@ -238,7 +236,7 @@
      ================================ -->
 <section id="portafolio">
   <div class="container">
-    <p class="section-label">// portfolio.render()</p>
+    <p class="section-label"></p>
     <h2 class="section-title">Proyectos recientes</h2>
     <p class="section-desc">Una muestra de lo que hemos construido para nuestros clientes.</p>
 
@@ -310,10 +308,10 @@
       </form>
 
       <div class="contact-alt">
-        <a href="tel:+573001234567" class="contact-link">
-          <span>📞</span> +57 300 123 4567
+        <a href="tel:+573136894842" class="contact-link">
+          <span>📞</span> +57 313 689 4842
         </a>
-        <a href="https://wa.me/573001234567" target="_blank" class="contact-link">
+        <a href="https://wa.me/573136894842" target="_blank" class="contact-link">
           <span>💬</span> WhatsApp
         </a>
         <a href="mailto:hola@devcrea.co" class="contact-link">
@@ -350,7 +348,6 @@
     </svg>
   </div>
   <p>© 2025 DevCrea · Colombia 🇨🇴</p>
-  <p style="font-family:'JetBrains Mono',monospace;font-size:0.72rem;">build(ideas).deploy(realidad);</p>
 </footer>
 
 <!-- JavaScript -->
