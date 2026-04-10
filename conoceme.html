@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conóceme — DevCrea</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/devcrea-icon.svg">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/conoceme.css"/>
+</head>
+<body>
+
+<!-- ================================
+     NAV
+     ================================ -->
+<nav>
+  <div class="logo">
+    <a href="index.html" style="display:block;line-height:0;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" height="34" aria-label="DevCrea">
+        <defs>
+          <linearGradient id="navDevG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4f9eff"/><stop offset="100%" style="stop-color:#3a7ee0"/>
+          </linearGradient>
+          <linearGradient id="navCreaG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#22d3a5"/><stop offset="100%" style="stop-color:#16b892"/>
+          </linearGradient>
+          <linearGradient id="navLine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#4f9eff"/>
+            <stop offset="45%" style="stop-color:#a855f7"/>
+            <stop offset="100%" style="stop-color:#22d3a5"/>
+          </linearGradient>
+          <filter id="navGlow"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <text x="2" y="36" font-family="JetBrains Mono,Courier New,monospace" font-size="36" font-weight="700" fill="url(#navDevG)" filter="url(#navGlow)" letter-spacing="-1" class="nav-logo-dev">Dev</text>
+        <text x="88" y="38" font-family="Georgia,Times New Roman,serif" font-size="38" font-weight="700" font-style="italic" fill="url(#navCreaG)" letter-spacing="-1" class="nav-logo-crea">Crea</text>
+        <circle cx="246" cy="14" r="5" fill="#a855f7" opacity="0.7" class="nav-logo-dot"/>
+        <rect x="2" y="44" width="244" height="2" rx="1" fill="url(#navLine)" opacity="0.6" class="nav-logo-line"/>
+      </svg>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html#servicios">Servicios</a></li>
+    <li><a href="index.html#sobre-nosotros">Nosotros</a></li>
+    <li><a href="index.html#portafolio">Portafolio</a></li>
+    <li><a href="conoceme.html" class="nav-active">Conóceme</a></li>
+    <li><a href="index.html#contacto" class="nav-cta">Contáctanos</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ================================
+     HERO PERSONAL
+     ================================ -->
+<section class="pm-hero">
+  <div class="hero-grid"></div>
+  <div class="glow-blue"></div>
+  <div class="glow-purple"></div>
+
+  <div class="pm-hero-inner">
+    <div class="hero-tag" style="animation:fadeUp 0.5s ease both;">
+      <span class="dot"></span>
+      Medellín, Antioquia 🇨🇴
+    </div>
+
+    <p class="pm-greeting" style="animation:fadeUp 0.5s 0.08s ease both;">Hola, soy</p>
+    <h1 class="pm-name" style="animation:fadeUp 0.5s 0.14s ease both;">Alejandro<br/>Giraldo</h1>
+
+    <p class="pm-role" style="animation:fadeUp 0.5s 0.2s ease both;">
+      <span class="pm-role-item">Desarrollador</span>
+      <span class="pm-sep">·</span>
+      <span class="pm-role-item">Diseñador</span>
+      <span class="pm-sep">·</span>
+      <span class="pm-role-item">Ing. de Sistemas</span>
+    </p>
+
+    <div class="pm-hero-btns" style="animation:fadeUp 0.5s 0.28s ease both;">
+      <a href="index.html#contacto" class="btn-primary">Contáctame</a>
+      <a href="#formacion" class="btn-outline">Ver formación</a>
+    </div>
+  </div>
+
+  <!-- Bloque de código personal -->
+  <div class="pm-code-block" style="animation:fadeUp 0.6s 0.18s ease both;">
+    <div class="code-header">
+      <div class="dot-r"></div><div class="dot-y"></div><div class="dot-g"></div>
+      <span class="code-filename">alejandro.js</span>
+    </div>
+    <div class="code-body">
+      <span class="c-kw">const</span> <span class="c-fn">Alejandro</span> = {<br/>
+      <span class="c-indent"><span class="c-fn">nombre</span>: <span class="c-str">"Alejandro Giraldo"</span>,</span>
+      <span class="c-indent"><span class="c-fn">ciudad</span>: <span class="c-str">"Medellín, Antioquia 🇨🇴"</span>,</span>
+      <span class="c-indent"><span class="c-fn">rol</span>: <span class="c-str">"Desarrollador & Diseñador"</span>,</span>
+      <span class="c-indent"><span class="c-fn">formacion</span>: <span class="c-str">"Ing. de Sistemas"</span>,</span>
+      <span class="c-indent"><span class="c-fn">titulos</span>: <span class="c-str">3</span>,</span>
+      <span class="c-indent"><span class="c-fn">disponible</span>: <span class="c-kw">true</span></span>
+      };<br/><br/>
+      <span class="c-cm">// Listo para tu proyecto</span><br/>
+      <span class="c-fn">Alejandro</span>.<span class="c-fn">connect</span>(tuEquipo);
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     FORMACIÓN
+     ================================ -->
+<section id="formacion">
+  <div class="container">
+    <p class="section-label"></p>
+    <h2 class="section-title">Formación académica</h2>
+    <p class="section-desc">Títulos obtenidos y estudios en curso.</p>
+
+    <div class="edu-grid">
+
+      <div class="edu-card edu-active">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-badge edu-badge--progress">En curso</div>
+        <div class="edu-title">Ingeniería de Sistemas</div>
+        <div class="edu-sub">Pregrado universitario</div>
+        <p class="edu-desc">Formación profesional en diseño, desarrollo y gestión de sistemas de información, software y redes computacionales.</p>
+        <div class="edu-tags">
+          <span class="service-tag">INGENIERÍA · SOFTWARE · REDES</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">📋</div>
+        <div class="edu-badge edu-badge--done">Titulado</div>
+        <div class="edu-title">Tecnología en Análisis y Desarrollo de Sistemas</div>
+        <div class="edu-sub">Tecnólogo</div>
+        <p class="edu-desc">Análisis, diseño e implementación de soluciones de software. Bases de datos, programación orientada a objetos y metodologías de desarrollo.</p>
+        <div class="edu-tags">
+          <span class="service-tag">ADSI · BD · POO</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">🖥️</div>
+        <div class="edu-badge edu-badge--done">Titulado</div>
+        <div class="edu-title">Técnico en Ensamble y Mantenimiento de Computadores</div>
+        <div class="edu-sub">Técnico</div>
+        <p class="edu-desc">Instalación, configuración, diagnóstico y reparación de equipos de cómputo. Soporte técnico de hardware y software.</p>
+        <div class="edu-tags">
+          <span class="service-tag">HARDWARE · SOPORTE · IT</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">🎨</div>
+        <div class="edu-badge edu-badge--done">Titulado</div>
+        <div class="edu-title">Técnico en Diseño Gráfico Digital</div>
+        <div class="edu-sub">Técnico</div>
+        <p class="edu-desc">Creación de piezas visuales para medios digitales e impresos. Identidad de marca, publicidad y manejo de herramientas de diseño.</p>
+        <div class="edu-tags">
+          <span class="service-tag">DISEÑO · BRANDING · DIGITAL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     HABILIDADES
+     ================================ -->
+<section id="habilidades" style="background:var(--bg2);">
+  <div class="container">
+    <p class="section-label"></p>
+    <h2 class="section-title">Habilidades técnicas</h2>
+    <p class="section-desc">Tecnologías y herramientas que manejo en mis proyectos.</p>
+
+    <div class="skills-cats">
+
+      <div class="skills-cat-block">
+        <p class="skills-cat-label"><span class="c-fn">// Desarrollo</span></p>
+        <div class="skills-list">
+          <span class="skill-chip">Java</span>
+          <span class="skill-chip">PHP</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">MySQL</span>
+          <span class="skill-chip">MVC</span>
+        </div>
+      </div>
+
+      <div class="skills-cat-block">
+        <p class="skills-cat-label"><span class="c-fn">// Automatización</span></p>
+        <div class="skills-list">
+          <span class="skill-chip">n8n</span>
+          <span class="skill-chip">WhatsApp API</span>
+          <span class="skill-chip">Bots</span>
+        </div>
+      </div>
+
+      <div class="skills-cat-block">
+        <p class="skills-cat-label"><span class="c-fn">// Diseño</span></p>
+        <div class="skills-list">
+          <span class="skill-chip">Diseño gráfico</span>
+          <span class="skill-chip">Branding</span>
+          <span class="skill-chip">Flyers</span>
+          <span class="skill-chip">Estampación</span>
+        </div>
+      </div>
+
+      <div class="skills-cat-block">
+        <p class="skills-cat-label"><span class="c-fn">// Sistemas</span></p>
+        <div class="skills-list">
+          <span class="skill-chip">Ensamble PC</span>
+          <span class="skill-chip">Mantenimiento</span>
+          <span class="skill-chip">Soporte técnico</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     CTA
+     ================================ -->
+<section class="pm-cta">
+  <div class="container" style="text-align:center;">
+    <p class="section-label" style="justify-content:center;display:flex;"></p>
+    <h2 class="section-title">¿Trabajamos juntos?</h2>
+    <p class="section-desc" style="margin:0 auto 2.5rem;">Si tienes un proyecto o quieres saber más, escríbeme. Respondo en menos de 24 horas.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="index.html#contacto" class="btn-primary">Enviar mensaje →</a>
+      <a href="https://wa.me/573136894842" target="_blank" class="btn-outline">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     FOOTER
+     ================================ -->
+<footer>
+  <div class="footer-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" height="30" aria-label="DevCrea">
+      <defs>
+        <linearGradient id="ftDevG" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#4f9eff"/><stop offset="100%" style="stop-color:#3a7ee0"/>
+        </linearGradient>
+        <linearGradient id="ftCreaG" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#22d3a5"/><stop offset="100%" style="stop-color:#16b892"/>
+        </linearGradient>
+        <linearGradient id="ftLine" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#4f9eff"/>
+          <stop offset="45%" style="stop-color:#a855f7"/>
+          <stop offset="100%" style="stop-color:#22d3a5"/>
+        </linearGradient>
+      </defs>
+      <text x="2" y="36" font-family="JetBrains Mono,Courier New,monospace" font-size="36" font-weight="700" fill="url(#ftDevG)" letter-spacing="-1">Dev</text>
+      <text x="88" y="38" font-family="Georgia,Times New Roman,serif" font-size="38" font-weight="700" font-style="italic" fill="url(#ftCreaG)" letter-spacing="-1">Crea</text>
+      <circle cx="246" cy="16" r="5" fill="#a855f7" opacity="0.6"/>
+      <rect x="2" y="44" width="244" height="2.5" rx="1.5" fill="url(#ftLine)" opacity="0.55"/>
+    </svg>
+  </div>
+  <p>© 2025 DevCrea · Colombia 🇨🇴</p>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
